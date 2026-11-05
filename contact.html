@@ -1,0 +1,136 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="./images/others/icon.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar_desktop">
+        <h1 class="logo">
+          <img
+            class="logo_img"
+            src="./images/others/Star_Wars_Logo.svg.webp"
+            alt="Logo"
+          />
+        </h1>
+        <ul class="navbar_menu" id="navbar_menu">
+          <li>
+            <a class="menu_elem link" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="menu_elem link" href="./contact.html">Contact</a>
+          </li>
+          <li>
+            <p class="menu_elem submenu_trig" id="gallery">Gallery</p>
+
+            <ul class="submenu" id="gallery_submenu">
+              <li>
+                <a class="submenu_link" href="./characters.html">Characters</a>
+              </li>
+              <li>
+                <a class="submenu_link" href="./planets.html">Planets</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button class="menu_button" id="menu_button">
+          <span class="menu_button_part"></span>
+          <span class="menu_button_part"></span>
+          <span class="menu_button_part"></span>
+        </button>
+      </nav>
+      <nav class="navbar navbar_mobile">
+        <h1 class="logo">
+          <img
+            class="logo_img"
+            src="./images/others/Star_Wars_Logo.svg.webp"
+            alt="Logo"
+          />
+        </h1>
+        <ul class="navbar_menu" id="navbar_menu">
+          <li id="menu_exit"><button id="menu_exit_button">x</button></li>
+          <li>
+            <a class="menu_elem link" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="menu_elem link" href="./contact.html">Contact</a>
+          </li>
+          <li>
+            <p class="menu_elem submenu_trig">Gallery</p>
+            <ul class="submenu">
+              <li>
+                <a class="submenu_link" href="./characters.html">Characters</a>
+              </li>
+              <li>
+                <a class="submenu_link" href="./planets.html">Planets</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section_form">
+        <h1 class="form_title">Contact Us</h1>
+        <form class="container" id="contact_form" novalidate>
+          <div class="title_container">
+            <label for="title">Title</label>
+            <select id="title" name="title">
+              <option value="">-</option>
+              <option value="question">Questions</option>
+              <option value="bug_mistake">Bugs or mistakes</option>
+              <option value="join">Joining the team</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="error_message" id="title_error"></span>
+          </div>
+          <div class="email_container">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+            <span class="error_message" id="email_error"></span>
+          </div>
+          <div class="phone_container">
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone"
+            />
+            <span class="error_message" id="phone_error"></span>
+          </div>
+          <div class="message_container">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter a message"
+              rows="3"
+            ></textarea>
+            <span class="error_message" id="message_error"></span>
+          </div>
+          <button type="submit">Send</button>
+          <span id="submit_info"></span>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Copyright&copy<span id="year"></span> Star Wars Website. All rights
+        reserved.
+      </p>
+      <p>Built by Dominika Pabisz</p>
+    </footer>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/contact.js"></script>
+  </body>
+</html>

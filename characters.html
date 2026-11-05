@@ -1,0 +1,134 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Characters</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="./images/others/icon.png" />
+  </head>
+  <body class="preload">
+    <header>
+      <nav class="navbar navbar_desktop">
+        <h1 class="logo">
+          <img
+            class="logo_img"
+            src="./images/others/Star_Wars_Logo.svg.webp"
+            alt="Logo"
+          />
+        </h1>
+        <ul class="navbar_menu" id="navbar_menu">
+          <li>
+            <a class="menu_elem link" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="menu_elem link" href="./contact.html">Contact</a>
+          </li>
+          <li>
+            <p class="menu_elem submenu_trig" id="gallery">Gallery</p>
+
+            <ul class="submenu" id="gallery_submenu">
+              <li>
+                <a class="submenu_link" href="./characters.html">Characters</a>
+              </li>
+              <li>
+                <a class="submenu_link" href="./planets.html">Planets</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button class="menu_button" id="menu_button">
+          <span class="menu_button_part"></span>
+          <span class="menu_button_part"></span>
+          <span class="menu_button_part"></span>
+        </button>
+      </nav>
+      <nav class="navbar navbar_mobile">
+        <h1 class="logo">
+          <img
+            class="logo_img"
+            src="./images/others/Star_Wars_Logo.svg.webp"
+            alt="Logo"
+          />
+        </h1>
+        <ul class="navbar_menu" id="navbar_menu">
+          <li id="menu_exit"><button id="menu_exit_button">x</button></li>
+          <li>
+            <a class="menu_elem link" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="menu_elem link" href="./contact.html">Contact</a>
+          </li>
+          <li>
+            <p class="menu_elem submenu_trig">Gallery</p>
+            <ul class="submenu">
+              <li>
+                <a class="submenu_link" href="./characters.html">Characters</a>
+              </li>
+              <li>
+                <a class="submenu_link" href="./planets.html">Planets</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="blur"></div>
+      <section class="presection">
+        <h1>Characters</h1>
+        <div class="presection_container">
+          <p>GO TO:</p>
+          <div class="buttons_container">
+            <button class="button" id="prequel_button">Prequel trilogy</button>
+            <button class="button" id="original_button">
+              Original trilogy
+            </button>
+            <button class="button" id="sequel_button">Sequel trilogy</button>
+          </div>
+        </div>
+      </section>
+      <div class="character_frame">
+        <div class="frame_title">
+          <h3>Anakin Skywalker</h3>
+          <button id="frame_exit">X</button>
+        </div>
+        <div class="frame_content">
+          <div class="image_container">
+            <img src="" alt="#" />
+          </div>
+          <div class="description_container">
+            <p class="description"></p>
+          </div>
+        </div>
+      </div>
+      <section class="section section_prequel">
+        <h2>Prequel trilogy</h2>
+        <div class="gallery_container" id="prequel_container">
+          <div class="box" id="character_gallery_template">
+            <img src="" alt="#" />
+            <div class="char_name">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_original">
+        <h2>Original trilogy</h2>
+        <div class="gallery_container" id="original_container"></div>
+      </section>
+      <section class="section section_sequel">
+        <h2>Sequel trilogy</h2>
+        <div class="gallery_container" id="sequel_container"></div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Copyright&copy<span id="year"></span> Star Wars Website. All rights
+        reserved.
+      </p>
+      <p>Built by Dominika Pabisz</p>
+    </footer>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/characters.js"></script>
+  </body>
+</html>

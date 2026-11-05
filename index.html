@@ -1,0 +1,165 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="./images/others/icon.png" />
+    <body>
+      <header>
+        <nav class="navbar navbar_desktop">
+          <h1 class="logo">
+            <img
+              class="logo_img"
+              src="./images/others/Star_Wars_Logo.svg.webp"
+              alt="Logo"
+            />
+          </h1>
+          <ul class="navbar_menu" id="navbar_menu">
+            <!-- <li id="menu_exit"><button id="menu_exit_button">x</button></li> -->
+            <li>
+              <a class="menu_elem link" href="./index.html">Home</a>
+            </li>
+            <li>
+              <a class="menu_elem link" href="./contact.html">Contact</a>
+            </li>
+            <li>
+              <p class="menu_elem submenu_trig" id="gallery">Gallery</p>
+
+              <ul class="submenu" id="gallery_submenu">
+                <li>
+                  <a class="submenu_link" href="./characters.html"
+                    >Characters</a
+                  >
+                </li>
+                <li>
+                  <a class="submenu_link" href="./planets.html">Planets</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="menu_button" id="menu_button">
+            <span class="menu_button_part"></span>
+            <span class="menu_button_part"></span>
+            <span class="menu_button_part"></span>
+          </button>
+        </nav>
+        <nav class="navbar navbar_mobile">
+          <h1 class="logo">
+            <img
+              class="logo_img"
+              src="./images/others/Star_Wars_Logo.svg.webp"
+              alt="Logo"
+            />
+            <!-- blad specjalnie -->
+          </h1>
+          <ul class="navbar_menu" id="navbar_menu">
+            <li id="menu_exit"><button id="menu_exit_button">x</button></li>
+            <li>
+              <a class="menu_elem link" href="./index.html">Home</a>
+            </li>
+            <li>
+              <a class="menu_elem link" href="./contact.html">Contact</a>
+            </li>
+            <li>
+              <!-- <p class="menu_elem submenu_trig" id="gallery">Gallery</p> -->
+              <p class="menu_elem submenu_trig">Gallery</p>
+              <ul class="submenu">
+                <!-- <ul class="submenu" id="gallery_submenu"></ul> -->
+                <li>
+                  <a class="submenu_link" href="./characters.html"
+                    >Characters</a
+                  >
+                </li>
+                <li>
+                  <a class="submenu_link" href="./planets.html">Planets</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="section_home_1">
+          <div class="container">
+            <div class="text_container">
+              <p>New to STAR WARS?</p>
+              <p>
+                Need a list of main characters appearing in the universe and a
+                brief summary who is who?
+              </p>
+              <p>
+                Or perhaps feel lost, because you can't grasp where events take
+                place?
+              </p>
+              <p>This website is for you!</p>
+            </div>
+            <div class="img_container">
+              <img src="/images/others/yoda2.jpg" alt="obrazek1" />
+            </div>
+          </div>
+        </section>
+        <section class="section_home_2">
+          <div class="container">
+            <div class="area_1">
+              <p>CREATED WITH</p>
+              <p><b>PASSION</b></p>
+            </div>
+            <div class="area_2">
+              <p>FROM</p>
+              <p><b>FANS</b></p>
+            </div>
+            <div class="area_3">
+              <p>FOR <b>EVERYONE</b></p>
+            </div>
+            <div class="img_area_1">
+              <img src="/images/others/lightsabers2.jpg" alt="lightsabers" />
+            </div>
+            <div class="img_area_2">
+              <img src="/images/others/stormtrooper3.jpg" alt="lightsabers" />
+            </div>
+            <div class="img_area_3">
+              <img src="/images/others/darthvader3.jpg" alt="lightsabers" />
+            </div>
+          </div>
+        </section>
+        <section class="section_home_3">
+          <div id="section_home_3_background"></div>
+          <div class="container">
+            <div class="text_container">
+              <p><b>Don't wait. Go explore!</b></p>
+            </div>
+            <div class="buttons_container">
+              <div class="button">
+                <a href="./characters.html">Characters</a>
+              </div>
+              <div class="button"><a href="./planets.html">Planets</a></div>
+            </div>
+          </div>
+        </section>
+        <section class="section_home_4">
+          <div class="container">
+            <p class="anim_on_screen">Have any questions?</p>
+            <p class="anim_on_screen">Want to join the team?</p>
+            <p class="anim_on_screen">
+              Or have you found any bugs or mistakes?
+            </p>
+            <div class="button anim_on_screen">
+              <a href="./contact.html">Contact us</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>
+          Copyright&copy<span id="year"></span> Star Wars Website. All rights
+          reserved.
+        </p>
+        <p>Built by Dominika Pabisz</p>
+      </footer>
+      <script src="./scripts/navbar.js"></script>
+      <script src="./scripts/home.js"></script>
+    </body>
+  </head>
+</html>
