@@ -255,7 +255,7 @@ body {
 .main .section_home_1 {
   background-image:
     linear-gradient(black, transparent 25%, transparent 75%, black),
-    url("./images/background3.webp");
+    url("./images/others/background3.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
